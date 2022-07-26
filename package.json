@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "node-build": "node ./config/build.js",
     "build": "node_modules/.bin/rollup -c ./config/rollup.config.js",
     "build-prod": "node_modules/.bin/rollup -c ./config/rollup.config.prod.js",
     "dev": "node_modules/.bin/rollup -w -c ./config/rollup.config.js",

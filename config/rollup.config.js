@@ -2,14 +2,14 @@ const path = require("path");
 // const buble = require("@rollup/plugin-buble");
 const { babel } = require("@rollup/plugin-babel");
 
-const resolve = function (filePath) {
+const resolveFile = function (filePath) {
   return path.join(__dirname, "..", filePath);
 };
 
 module.exports = {
-  input: resolve("src/index.js"),
+  input: resolveFile("src/index.js"),
   output: {
-    file: resolve("dist/index.js"),
+    file: resolveFile("dist/index.js"),
     // format: "iife", // buble
     format: "umd", // 通用模块定义
     sourcemap: true,
