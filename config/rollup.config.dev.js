@@ -20,3 +20,25 @@ config.plugins = [
 ];
 
 module.exports = config;
+
+// 多文件
+// const configList = require("./rollup.config");
+// configList.map((config, index) => {
+//   config.output.sourcemap = true;
+
+//   if (index === 0) {
+//     config.plugins = [
+//       ...config.plugins,
+//       ...[
+//         serve({
+//           port: PORT,
+//           contentBase: [resolveFile("example"), resolveFile("dist")],
+//         }),
+//       ],
+//     ];
+//   }
+
+//   return config;
+// });
+
+// module.exports = configList;
